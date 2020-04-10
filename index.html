@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="武漢肺炎（新型冠狀病毒）資料儀表板" />
+    <meta property="og:description" content="詳細列出最新公告的武漢肺炎（新型冠狀病毒）累計通報病例及檢驗情況，有症狀就要採檢、做好自主健康管理。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>武漢肺炎（新型冠狀病毒）資料儀表板</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mb-1">
+            <div class="col-sm">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="navbar-brand mb-0 h1">
+                        <i class="fas fa-chart-bar"></i> <a class="navbar-brand">武漢肺炎（新型冠狀病毒）資料儀表板</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">
+                                    <i class="fas fa-globe-americas"></i> 美國約翰霍普金斯大學新冠病毒儀表板
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-sm">
+                <div id="root"></div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm">
+                <small class="text-secondary text-nowrap mr-3">
+                    <i class="fas fa-table"></i> 資料來源：<a href="https://github.com/CSSEGISandData/COVID-19" class="text-dark">美國約翰霍普金斯大學系統科學與工程中心</a>
+                </small>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js" crossorigin defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js" crossorigin defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js" crossorigin defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" crossorigin defer></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/dashboard.js" defer></script>
+</body>
+</html>
