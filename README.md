@@ -11,6 +11,6 @@ $ git clone
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/X8zsDyB.png)
+![](https://i.imgur.com/FRQzIp3.png)
 > 武漢肺炎持續延燒，這次疫情如同是沒有砲彈的第三次世界大戰，接下來將面臨社交距離和檢測的交叉點
 

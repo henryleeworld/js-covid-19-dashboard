@@ -249,7 +249,7 @@ function DataType({
     };
     return (
         e('label', {
-                className: `alert ${alertClass} mr-3 mb-3`
+                className: `alert ${alertClass} me-3 mb-3`
             },
             e('div', {
                     className: 'form-group form-check mb-0'
